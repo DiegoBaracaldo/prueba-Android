@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/editar_perfil"
+        android:name="com.example.dmario_jeans_prueba_apk.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/Disenos"
+        android:name="com.example.dmario_jeans_prueba_apk.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/Bodega"
+        android:name="com.example.dmario_jeans_prueba_apk.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/loginFragment3"
+        android:name="com.example.dmario_jeans_prueba_apk.ui.login.LoginFragment2"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/action_loginFragment3_to_editar_perfil"
+            app:destination="@id/editar_perfil" />
+        <action
+            android:id="@+id/action_loginFragment3_to_Disenos"
+            app:destination="@id/Disenos" />
+        <action
+            android:id="@+id/action_loginFragment3_to_Bodega2"
+            app:destination="@id/Bodega" />
+    </fragment>
+</navigation>

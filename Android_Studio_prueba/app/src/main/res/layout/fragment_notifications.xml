@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="D'MARIO JEAN'S"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bodega_15" />
+
+        <TextView
+            android:id="@+id/navega_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bodega"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/codDiseno_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_cornes"
+            android:textAlignment="center"
+            android:hint="Codigo Diseño"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:padding="18dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/movimiento_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_cornes"
+            android:textAlignment="center"
+            android:hint="Tipo Movimiento"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:padding="18dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/dia_input"
+            android:layout_width="411dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_cornes"
+            android:hint="Fecha del movimiento"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Consultacantidad_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_cornes"
+            android:textAlignment="center"
+            android:hint="Cantidad"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:padding="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/editarDiseno_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultar"
+                android:backgroundTint="@color/azul_majorelle"
+                android:textColor="@color/white"
+                android:padding="18dp"
+                android:layout_marginTop="32dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/saveDiseno_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:backgroundTint="@color/azul_majorelle"
+                android:textColor="@color/white"
+                android:padding="18dp"
+                android:layout_marginTop="32dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
